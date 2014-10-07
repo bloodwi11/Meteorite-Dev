@@ -141,7 +141,9 @@
         "maxHeight": 60,
         "retrogen": "true",
         "biomeRestriction": "none",
-        "biomes": [],
+        "biomes": [
+            "all"
+        ],
         "dimensionRestriction": "blacklist",
         "dimensions": [
             -1,
@@ -158,7 +160,9 @@
         "maxHeight": 130,
         "retrogen": "true",
         "biomeRestriction": "none",
-        "biomes": [],
+        "biomes": [
+            "all"
+        ],
         "dimensionRestriction": "blacklist",
         "dimensions": [
             -1,
@@ -175,7 +179,9 @@
         "maxHeight": 40,
         "retrogen": "true",
         "biomeRestriction": "none",
-        "biomes": [],
+        "biomes": [
+            "all"
+        ],
         "dimensionRestriction": "blacklist",
         "dimensions": [
             -1,
@@ -191,7 +197,153 @@
         "maxHeight": 64,
         "retrogen": "true",
         "biomeRestriction": "none",
-        "biomes": [],
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "platinum": {
+        "template": "uniform",
+        "block": "gregtech:gt.blockores", "metadata": 85},
+        "clusterSize": 8,
+        "numClusters": 0.25,
+        "minHeight": 40,
+        "maxHeight": 50,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "pitchblende": {
+        "template": "uniform",
+        "block": "gregtech:gt.blockores", "metadata": 873},
+        "clusterSize": 8,
+        "numClusters": 0.5,
+        "minHeight": 10,
+        "maxHeight": 40,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "plutoniumn": {
+        "template": "uniform",
+        "block": "gregtech:gt.blockores", "metadata": 100},
+        "clusterSize": 8,
+        "numClusters": 0.5,
+        "minHeight": 20,
+        "maxHeight": 30,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "monazite": {
+        "template": "uniform",
+        "block": "gregtech:gt.blockores", "metadata": 520},
+        "clusterSize": 8,
+        "numClusters": 1.5,
+        "minHeight": 20,
+        "maxHeight": 40,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "molybdenum": {
+        "template": "uniform",
+        "block": "gregtech:gt.blockores", "metadata": 48},
+        "clusterSize": 8,
+        "numClusters": 0.25,
+        "minHeight": 20,
+        "maxHeight": 50,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "tungstate": {
+        "template": "uniform",
+        "block": "gregtech:gt.blockores", "metadata": 841},
+        "clusterSize": 8,
+        "numClusters": 0.5,
+        "minHeight": 20,
+        "maxHeight": 50,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "sapphire": {
+        "template": "uniform",
+        "block": "gregtech:gt.blockores", "metadata": 503},
+        "clusterSize": 8,
+        "numClusters": 0.15,
+        "minHeight": 10,
+        "maxHeight": 40,
+        "retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            1
+        ]
+    },
+    "manganese": {
+        "template": "uniform",
+        "block": "gregtech:gt.blockores", "metadata": 31},
+        "clusterSize": 8,
+        "numClusters": 0.05,
+        "minHeight": 20,
+        "maxHeight": 30,
+        "retrogen": "true",
+        "biomeRestriction": "whitelist",
+        "biomes": [
+        "0"
+        ],
         "dimensionRestriction": "blacklist",
         "dimensions": [
             -1,
