@@ -1,0 +1,13 @@
+{
+  "name":"Meteorite-Dev",
+  "title":"Meteorite-Dev (1.0)",
+  "gameVersion":"1.7.10",
+  "launch": {
+    "flags":[]
+  },
+  "userFiles": {
+    "include": [
+      "config/*.cfg"
+    ]
+  }
+}
