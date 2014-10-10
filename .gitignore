@@ -8,9 +8,6 @@ Desktop.ini
 #Build Folder
 dist/
 
-#Temporary Ignore
-src/config/CustomOreGen
-
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
