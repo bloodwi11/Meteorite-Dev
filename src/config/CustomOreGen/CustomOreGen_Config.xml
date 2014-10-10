@@ -410,7 +410,7 @@
     <Import file='modules/default/Mekanism.xml'/>
     <Import file='modules/default/Steamcraft.xml'/>
     <Import file='modules/default/Gregtech.xml'/>
-    <Import file='modules/default/AppliedEnergistics2.xml'/>
+    <Import file='modules/custom/AppliedEnergistics2.xml'/>
 
     <!-- Possible mods to support as standard configs:
          * Pam's Harvest Craft (salt)
