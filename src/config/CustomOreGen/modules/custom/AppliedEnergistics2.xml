@@ -146,5 +146,6 @@
         </ConfigSection>
 
     </IfCondition>
+    </ConfigSection>
     
 </IfModInstalled>
