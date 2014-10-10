@@ -1,4 +1,4 @@
-<!--*********************  CustomOreGen IndustrialCraft Ores Module ******************************
+<!--*********************  CustomOreGen AppliedEnergistics Ores Module ******************************
 *
 *   This file contains Presets, Options, and Distributions for the Applied Energisitcs 2 ores.
 *
@@ -18,7 +18,7 @@
             </Description>
         </OptionDisplayGroup>
         
-        <!--*******************   Copper   *********************-->
+        <!--*******************   Certus Quartz   *********************-->
         <ConfigSection>
             
             <OptionChoice name='ae2CertusDist' displayState=':= if(blockExists("appliedenergistics2:oreCertusQuartz"),"shown","hidden")' displayGroup='groupAE2'>
@@ -123,7 +123,7 @@
             <IfCondition condition=':= if(age, age.ae2CertusClouds > 0, ae2CertusDist = "strategicClouds")'>
                 <Cloud name='AE2CertusCloud' block='appliedenergistics2:oreCertusQuartz' inherits='PresetStrategicCloud'>
                     <Description>  
-                        Diffuse copper cloud surrounded by single-block "hint" veins, found in savanna biomes.
+                        Diffuse certus quartz cloud surrounded by single-block "hint" veins, found in savanna biomes.
                     </Description> 
                     <DrawWireframe>:=drawWireframes</DrawWireframe>
                     <WireframeColor>0x40CCFFFF</WireframeColor> 
