@@ -44,9 +44,7 @@
                 <Choice value='disabled' displayValue='Disabled' description='No certus quartz is generated, and no certus quartz symbols are available in Mystcraft ages.'/>
             </OptionChoice>
             
-            <OptionNumeric name='ae2CertusFreq' default='1'  min='0' max='5'
-                           displayState=':= if(?advOptions &amp; ae2CertusDist != "disabled","shown","hidden")'
-                           displayGroup='groupAE2'>
+            <OptionNumeric name='ae2CertusFreq' default='1'  min='0' max='5' displayState=':= if(?advOptions &amp; ae2CertusDist != "disabled","shown","hidden")' displayGroup='groupAE2'>
                 <Description> Frequency multiplier for Applied Energisitcs 2 Certus Quartz distributions </Description>
                 <DisplayName>AE2 Certus Quartz Freq.</DisplayName>
             </OptionNumeric>
@@ -65,6 +63,7 @@
             </IfCondition>
        
         </ConfigSection>           
+
     </ConfigSection>
     
     <!--*****************************   Distributions   *************************************
@@ -101,7 +100,9 @@
             
             <IfCondition condition=':= if(age, age.ae2CertusVeins > 0, ae2CertusDist = "layeredVeins")'>             
                 <Veins name='ae2CertusVeins' block='appliedenergistics2:oreCertusQuartz' inherits='PresetLayeredVeins'>
-                    <Description>  Sparse veins in the 10-30 range. </Description> 
+                    <Description>
+                        Sparse veins in the 10-30 range. 
+                    </Description> 
                     <DrawWireframe>:=drawWireframes</DrawWireframe>
                     <WireframeColor>0x40CCFFFF</WireframeColor> 
                     <Setting name='MotherlodeFrequency' avg=':= 3.0 * ae2CertusFreq * if(age,age.ae2CertusVeins,1) * _default_'/>
