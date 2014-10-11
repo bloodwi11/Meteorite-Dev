@@ -21,13 +21,13 @@
         <!--*******************   Certus Quartz   *********************-->
         <ConfigSection>
             
-            <OptionChoice name='ae2CertusDist' displayState=':= if(blockExists("appliedenergistics2:oreCertusQuartz"),"shown","hidden")' displayGroup='groupAE2'>
+            <OptionChoice name='ae2CertusDist' displayState=':= if(blockExists("appliedenergistics2:tile.OreQuartz"),"shown","hidden")' displayGroup='groupAE2'>
                 <Description> Controls how Applied Energisitcs 2 Certus Quartz is generated </Description>
-                <DisplayName>AE2 Certus Quartz Type</DisplayName>
-                <Default>:= if(blockExists("appliedenergistics2:oreCertusQuartz"),"layeredVeins","disabled")</Default>
+                <DisplayName>AE2 Certus Quartz</DisplayName>
+                <Default>:= if(blockExists("appliedenergistics2:tile.OreQuartz"),"layeredVeins","disabled")</Default>
                 <Choice value='layeredVeins' displayValue='Veins'>
                     <Description> 
-                        Groups of long narrow veins found about one third of the way down to bedrock. Especially commin in the savanna.
+                        Groups of long narrow veins found about one third of the way down to bedrock. Especially common in the savanna.
                     </Description>
                 </Choice>
                 <Choice value='strategicClouds' displayValue='Clouds'>
@@ -80,7 +80,7 @@
             <Comment>  
                 The global option deferredPopulationRange must be large enough to catch all ore clusters (>= 32).
             </Comment>
-            <Replaces block='appliedenergistics2:oreCertusQuartz'/> 
+            <Replaces block='appliedenergistics2:tile.OreQuartz'/>
         </Substitute>
         
         <!--*******************   Certus Quartz   *********************-->            
@@ -92,8 +92,7 @@
                     <DrawWireframe>:=drawWireframes</DrawWireframe>
                     <WireframeColor>0x40CCFFFF</WireframeColor> 
                     <Setting name='Size' avg=':= 0.375 * ae2CertusSize * _default_'/> 
-                    <Setting name='Frequency' avg=':= 1.0 * ae2CertusFreq * if(age,age.ae2CertusClusters,1) * _default_' 
-                                                range=':= 4.5 * ae2CertusFreq * if(age,age.ae2CertusClusters,1)'/>
+                    <Setting name='Frequency' avg=':= 1.0 * ae2CertusFreq * if(age,age.ae2CertusClusters,1) * _default_' range=':= 4.5 * ae2CertusFreq * if(age,age.ae2CertusClusters,1)'/>
                     <Setting name='Height' avg=':= 32/64 * dimension.groundLevel' range=':= 32/64 * dimension.groundLevel' type='uniform'/> 
                 </StandardGen>
             </IfCondition>   
@@ -102,7 +101,7 @@
                 <Veins name='ae2CertusVeins' block='appliedenergistics2:oreCertusQuartz' inherits='PresetLayeredVeins'>
                     <Description>
                         Sparse veins in the 10-30 range. 
-                    </Description> 
+                    </Description>
                     <DrawWireframe>:=drawWireframes</DrawWireframe>
                     <WireframeColor>0x40CCFFFF</WireframeColor> 
                     <Setting name='MotherlodeFrequency' avg=':= 3.0 * ae2CertusFreq * if(age,age.ae2CertusVeins,1) * _default_'/>
@@ -126,7 +125,7 @@
                 <Cloud name='AE2CertusCloud' block='appliedenergistics2:oreCertusQuartz' inherits='PresetStrategicCloud'>
                     <Description>  
                         Diffuse certus quartz cloud surrounded by single-block "hint" veins, found in savanna biomes.
-                    </Description> 
+                    </Description>
                     <DrawWireframe>:=drawWireframes</DrawWireframe>
                     <WireframeColor>0x40CCFFFF</WireframeColor> 
                     <Setting name='DistributionFrequency' avg=':= 4 * ae2CertusFreq * if(age,age.ae2CertusClouds,1) * _default_'/>
@@ -136,7 +135,7 @@
                     <Setting name='OreDensity' avg=':= 1.1 * _default_'/>
                     <Biome name='.*' weight='0.2'/>
                     <BiomeType name='Savanna'/>
-                    <Veins name='AE2CertusHintVeins' block='appliedenergistics2:oreCertusQuartz' inherits='PresetHintVeins'>
+                    <Veins name='AE2CertusHintVeins' block='appliedenergistics2:tile.OreQuartz' inherits='PresetHintVeins'>
                         <DrawWireframe>:=drawWireframes</DrawWireframe>
                         <WireframeColor>0x40CCFFFF</WireframeColor> 
                         <Setting name='MotherlodeFrequency' avg=':= _default_' range=':= _default_'/>   
